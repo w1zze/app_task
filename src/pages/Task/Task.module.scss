@@ -1,0 +1,78 @@
+
+.task{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70rem;
+    width: 100%;
+    .inner{
+        border: .3rem solid var(--color-dark);
+        display: flex;
+        justify-content: space-between;
+
+        .input{
+            border: none;
+            padding: 1rem;
+            width: 30rem;
+            height: 2.5rem;
+            outline: none;
+            background-color: var(--color-white);
+            color: var(--color-dark);
+            font-size: 1.6rem;
+        }
+        .input::placeholder{
+            color: var(--color-dark);
+        }
+        .btn{
+            text-transform: uppercase;
+            border: none;
+            padding: 1rem;
+            font-size: 2rem;
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            &:hover{
+                cursor: pointer;
+                opacity: .9;
+            }
+        }
+    }
+    .todo__item{
+        position: absolute;
+        min-width: 20rem;
+        color: var(--color-dark);
+        border: .3rem solid var(--color-dark);
+        cursor: move;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        font-size: 2rem;
+
+        .btn{
+            padding: 1rem;
+            background-color: var(--color-dark);
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-white);
+            &:hover{
+                cursor: pointer;
+                opacity: .9;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px){
+
+    .task{
+
+        .inner{
+
+            .input{
+                width: 18rem;
+            }
+        }
+    }
+}

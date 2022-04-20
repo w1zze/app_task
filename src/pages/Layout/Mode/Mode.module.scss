@@ -1,0 +1,26 @@
+
+.mode{
+    position: fixed;
+    z-index: 2;
+    right: 1rem;
+    bottom: 1rem;
+    border: .3rem solid var(--color-dark);
+    padding: 0.5rem;
+
+    .light{
+        cursor: pointer;
+        border: none;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+        font-size: 2rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .dark{
+        cursor: pointer;
+        border: none;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+        font-size: 2rem;
+        padding: 0 1rem 0 1rem;
+    }
+}

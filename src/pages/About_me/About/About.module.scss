@@ -1,0 +1,147 @@
+.about{
+    padding: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .info{
+        padding-top: 10rem;
+        width: 76rem;
+
+        .title{
+            font-size: 3.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: var(--color-dark);
+
+            .span{
+                color: var(--color-white);
+            }
+        }
+
+        .subtitle{
+            margin-top: -1rem;
+            font-size: 2rem;
+            width: 93%;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .inner{
+            display: flex;
+            gap: 2rem;
+
+            .link{
+                font-size: 5rem;
+                color: var(--color-dark);
+                transition: opacity .2s ease-in-out;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+        .video{
+            width: 55rem;
+            border: .4rem solid var(--color-dark);
+    }
+    .square{
+        position: absolute;
+        z-index: -1;
+        bottom: -13rem;
+        right: -35rem;
+        width: 80rem;
+        height: 50rem;
+        border: .3rem solid var(--color-dark);
+    }
+    .square_second{
+        position: absolute;
+        z-index: -1;
+        top: 20rem;
+        left: -9rem;
+        width: 20rem;
+        height: 10rem;
+        background-color: var(--color-dark);
+    }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+    .about{
+        padding: 5rem 0;
+
+        .square{
+            height: 30rem;
+        }
+        
+        .square_second{
+            top: 13rem;
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .about{
+        padding: 10rem 0;
+    
+        .info{
+            padding-top: 0rem;
+        }
+
+            .video{
+                width: 45rem;
+        }
+        .square{
+            top: 20rem;
+            right: -5rem;
+            width: 40rem;
+            height: 30rem;
+        }
+        .square_second{
+            top: 8rem;
+            left: -9rem;
+            width: 20rem;
+            height: 10rem;
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width: 802px) {
+    .about{
+
+            .video{
+                width: 40rem;
+        }
+        .square{
+        }
+        .square_second{
+            top: 8rem;
+        }
+    
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .about{
+
+    
+        .info{
+        }
+
+            .video{
+                display: none;
+        }
+        .square{
+            display: none;
+        }
+    
+    }
+    
+}
